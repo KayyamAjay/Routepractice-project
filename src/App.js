@@ -11,10 +11,10 @@ function App() {
       <Route path="/quotes" exact>
         <AllQuotes />
       </Route>
-      <Route path="/quotes/:quoteid" exact>
+      <Route path="/quotes/:quoteid">
         <QuoteDetails />
       </Route>
-      <Route path="/newquote" exact>
+      <Route path="/newquote">
         <NewQuote />
       </Route>
     </Switch>
