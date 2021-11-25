@@ -3,6 +3,7 @@ import AllQuotes from "./pages/AllQuotes";
 import NewQuote from "./pages/NewQuote";
 import QuoteDetails from "./pages/QuoteDetail";
 import Layout from "./components/layout/Layout";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Layout>
@@ -19,8 +20,11 @@ function App() {
         <Route path="/newquote">
           <NewQuote />
         </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
       </Switch>
-    </Layout>
+    </Layout> //path='*' need to added last it checks whethet upper routes is matched or not
   );
 }
 
